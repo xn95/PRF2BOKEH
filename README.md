@@ -13,3 +13,6 @@ The interactive webpage can also be saved as a .html, allowing for easy sharing 
 The plot does not automatically update as Winplotr does from the FP suite, however the same .prf may be re-read without restarting the script. 
 Other features from Winplotr are also not available, such as the ability to call FP from the CLI / webpage and other programs such as K-search.
 The point list is exported as a .csv, this list would require reformatting for use with other FP programs
+
+## Examples
+Examples folder contains .html files of plots generated from examples available on the FullProf [documentation](https://fullprofsuite.github.io/FullProf-Web/documentation.html) page.
