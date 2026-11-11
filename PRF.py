@@ -730,15 +730,15 @@ def main(argv=None):
           "WRITTEN BY S. INJAC\n\n\n")
     args = argv[1:]
     if len(args) == 0:
-        print("To use this script, pass the path of a FullProf .prf file as an argument\n")
+        print("To use this script, pass the path of a FullProf .prf file as an argument\nOr call script in a directory containing .prf files")
         path = choose_prf(Path.cwd())
         if path is None:
             return 1
     elif len(args) == 1:
         try:
             path = resolve_prf_path(args[0])
-        except (ValueError, FileNotFoundError) as e:
-            print(e)
+        except (ValueError, FileNotFoundError) as error:
+            print(error)
             return 1
     else:
         print("Usage: python PRF.py [file.prf]")
